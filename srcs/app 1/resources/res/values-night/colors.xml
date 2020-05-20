@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_background">#1f2023</color>
+    <color name="color_divider">#414141</color>
+    <color name="color_hint">#414141</color>
+    <color name="color_on_background">@color/white</color>
+    <color name="color_on_surface">@color/white</color>
+    <color name="color_primary_text">@color/white</color>
+    <color name="color_surface">#1b1b1b</color>
+</resources>

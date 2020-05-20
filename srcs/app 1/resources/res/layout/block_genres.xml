@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.google.android.material.textview.MaterialTextView android:textSize="@dimen/text_large" android:textStyle="bold" android:textColor="@color/color_primary_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/game_genres" android:layout_marginStart="@dimen/space_medium"/>
+    <HorizontalScrollView android:scrollbars="none" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_small" android:paddingStart="@dimen/space_medium" android:paddingEnd="@dimen/space_medium">
+        <com.google.android.material.chip.ChipGroup android:id="@+id/chip_group_genres" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_xsmall" app:singleLine="true"/>
+    </HorizontalScrollView>
+</merge>

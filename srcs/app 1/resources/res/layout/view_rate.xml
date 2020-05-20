@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@+id/image_emoji" android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/ic_emoji" android:tint="@color/color_divider"/>
+        <androidx.emoji.widget.EmojiAppCompatTextView android:textSize="32sp" android:textColor="#ff000000" android:gravity="center" android:layout_gravity="center" android:id="@+id/text_emoji" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/space_small"/>
+</merge>
