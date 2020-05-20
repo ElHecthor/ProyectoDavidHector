@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/layout_content" android:background="@drawable/bg_bottom_sheet_white" android:layout_width="match_parent" android:layout_height="wrap_content">
-    <View android:layout_gravity="center_horizontal" android:layout_marginTop="@dimen/space_pre_medium" android:layout_marginBottom="@dimen/space_medium" style="@style/Widget.Stash.DraggableLine"/>
-    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/text_xxxlarge" android:textColor="@color/color_primary_text" android:gravity="center" android:id="@+id/text_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lists_add_to_list_title" android:includeFontPadding="false" android:fontFamily="@string/font_family_black" android:layout_marginStart="@dimen/space_medium" android:layout_marginEnd="@dimen/space_medium"/>
-    <View android:layout_marginTop="@dimen/space_medium" style="@style/Widget.Stash.HorizontalDivider"/>
-    <include android:id="@+id/view_custom_list" layout="@layout/view_custom_lists"/>
-</LinearLayout>
