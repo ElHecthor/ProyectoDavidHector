@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "847076918535",
+    "firebase_url": "https://wikigame-88c86.firebaseio.com",
+    "project_id": "wikigame-88c86",
+    "storage_bucket": "wikigame-88c86.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:847076918535:android:b1b74c5f0e33a4115771a2",
+        "android_client_info": {
+          "package_name": "com.wiki.game.wizardlabs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "847076918535-b3i279qed2hi8vib6rpedc15lrajrkg8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLICqnuJOHrHZ9djBhO8f-mybqf7qN_jE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "847076918535-b3i279qed2hi8vib6rpedc15lrajrkg8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
