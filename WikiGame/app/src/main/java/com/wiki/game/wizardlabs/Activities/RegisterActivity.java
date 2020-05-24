@@ -1,11 +1,5 @@
 package com.wiki.game.wizardlabs.Activities;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
-
 import android.Manifest;
 import android.content.ContentResolver;
 import android.content.Intent;
@@ -20,6 +14,12 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -42,7 +42,7 @@ public class RegisterActivity extends AppCompatActivity {
 
     private EditText userEmail, userPassword, userPassword2, userName;
     private ProgressBar loadingProgressBar;
-    private Button regBtn;
+    private Button regBtn, logRegBtn;
 
     private FirebaseAuth mAuth;
 
@@ -67,6 +67,16 @@ public class RegisterActivity extends AppCompatActivity {
                 } else {
                     openGallery();
                 }
+            }
+        });
+
+        logRegBtn = findViewById(R.id.btn_registerLogin);
+        logRegBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent loginActivity = new Intent(getApplicationContext(), LoginActivity.class);
+                startActivity(loginActivity);
+                finish();
             }
         });
 
@@ -127,11 +137,8 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     private void updateUserInfo(final String name, Uri pickedImgUri, final FirebaseUser currentUser) {
-        showMessage("1");
         StorageReference mStorage = FirebaseStorage.getInstance().getReference().child("users_photos");
-        showMessage("2");
         final StorageReference imageFilePath = mStorage.child(pickedImgUri.getLastPathSegment());
-        showMessage("3");
         imageFilePath.putFile(pickedImgUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
             @Override
             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
@@ -162,7 +169,7 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     private void updateUI() {
-        Intent homeActivity = new Intent(getApplicationContext(),HomeActivity.class);
+        Intent homeActivity = new Intent(getApplicationContext(), HomeActivity.class);
         startActivity(homeActivity);
         finish();
     }

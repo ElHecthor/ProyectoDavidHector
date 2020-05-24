@@ -10,29 +10,27 @@
         android:id="@+id/btn_login"
         android:layout_width="170dp"
         android:layout_height="64dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
         android:background="@drawable/reg_btn_style"
         android:text="login"
         android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_loginRegister"
-        app:layout_constraintVertical_bias="0.291" />
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
     <Button
         android:id="@+id/btn_loginRegister"
         android:layout_width="170dp"
         android:layout_height="64dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
         android:background="@drawable/reg_btn_style"
         android:text="regirter"
         android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ed_loginPass"
-        app:layout_constraintVertical_bias="0.316" />
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -78,7 +76,7 @@
         app:layout_constraintTop_toTopOf="@+id/btn_login" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/img_navUsername"
         android:layout_width="140dp"
         android:layout_height="140dp"
         app:layout_constraintBottom_toTopOf="@+id/ed_loginMail"
