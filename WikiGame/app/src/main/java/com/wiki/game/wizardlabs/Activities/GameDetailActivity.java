@@ -84,6 +84,7 @@ public class GameDetailActivity extends AppCompatActivity {
         txtPlayers.setText(gamePlayers);
         String gamePlatform = (String) getIntent().getExtras().get("platform");
         txtPlatform.setText(gamePlatform);
+
         String gameDescription = (String) getIntent().getExtras().get("description");
         txtDescription.setText(gameDescription);
 
